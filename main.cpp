@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 #include <vector>
-
 using namespace std;
 
 struct Book {
@@ -12,7 +11,6 @@ struct Book {
     double price;
 };
 
-// Get the selected value from a book
 double getValue(Book book, int criteria) {
 
     if (criteria == 1)
@@ -25,7 +23,6 @@ double getValue(Book book, int criteria) {
         return book.price;
 }
 
-// Insertion Sort Algorithm
 void insertionSort(vector<Book>& books, int criteria) {
 
     int n = books.size();
@@ -47,7 +44,6 @@ void insertionSort(vector<Book>& books, int criteria) {
     }
 }
 
-// Display books
 void displayBooks(const vector<Book>& books) {
 
     cout << "\n========== BOOK LIST ==========\n";
